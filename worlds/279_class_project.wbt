@@ -1,0 +1,45 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5927160196129755 0.5744770647942405 0.5645031639588434 2.140319603859091
+  position -0.0036102685341383722 0.02017846636216386 10
+}
+TexturedBackground {
+}
+DEF Plane Pose {
+  translation -1 0 0
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.784314 0 0.784314
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+      }
+    }
+  ]
+}
+DEF Sphere Pose {
+  translation 1 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.784314 0 0.784314
+        roughness 0.2
+        metalness 0
+      }
+      geometry DEF geometry_sphere Sphere {
+        radius 0.6
+      }
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
